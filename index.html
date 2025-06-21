@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> &#x1F4E2;Cumple de David</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Cumple de David" />
+    <meta name="description" content="Estas invitado al cumple de David." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://daviddelarosa20.github.io/cumpledavid/" />
+    <meta property="og:title" content="Cumple de Deivid" />
+    <meta property="og:description" content="Estas invitad@ a mi cumple" />
+    <meta property="og:image" content="https://daviddelarosa20.github.io/cumpledavid/images/miniatura.jpeg" />
+</head>
+<!-- Librería de confetti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<!-- Script para lanzar el confeti al cargar la página -->
+<script>
+  window.onload = function() {
+    confetti({
+      particleCount: 150,
+      spread: 80,
+      origin: { y: 0.6 }
+    });
+  }
+</script>
+<body>
+    <header class="hero">
+        <section class="hero__mainTitle container">
+            <div class="hero__logo">
+                <h2 class="hero__title">DelaRosa Designs</h2>
+            </div>
+        </section>
+
+        <section class="hero__container container">
+            <h1 class="hero__subtitle">¡Felicidades!&#x1F632; Fuiste seleccionad@!</h1>
+            <p class="hero__paragraph"> Fuiste seleccionado para ser invitado cordialmente a una cena especial por mi cumpleaños&#x1F389; </p>
+            <img src="images/arrow.svg" class="hero__arrow" id="toggle-icon">
+        </section>
+    </header>
+
+    <main>
+        <div id="divToToggle">
+            <section class="container about">
+                <h1 class="subtitle">¡Mis 22 vueltotas al sol!&#x1F525;</h1>
+                <p class="about__paragraph">Se acerca mi cumpleaños y qué mejor que celebrarlo acompañado de mi gente? Ustedes saben que rollo &#x1F4AA;</p>
+            </section>
+
+            <section class="lugarFecha">
+                <div class="lugarFecha__container container">
+                    <div class="lugarFecha__texts">
+                        <h2 class="subtitle">Kiromi Sushi Calvario</h2>
+                        <p class="lugarFecha__paragraph"> Negrete 1213, Zona Centro, 34000 Durango, Dgo.</p>
+                        <p class="subtitle">Martes 8 de Julio</p>
+                        <p class="confirma">Confirma tu asistencia &#x1F609;</p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7288.358856201832!2d-104.6800958251996!3d24.024737078190107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bc83e13402bdd%3A0x823d891485d9185!2sKiromi%20Sushi%20Calvario!5e0!3m2!1ses!2smx!4v1750539579035!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="lugarFecha__lugar"></iframe>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <section class="footer__copy container">
+                <h3 class="footer__copyright">Derechos reservados &copy; David De la Rosa</h3>
+            </section>
+        </footer>
+    </main>
+
+    <script src="./js/questions.js"></script>
+</body>
+</html>
