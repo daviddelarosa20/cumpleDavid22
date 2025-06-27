@@ -24,16 +24,6 @@
 <!-- Librería de confetti -->
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
-<!-- Script para lanzar el confeti al cargar la página -->
-<script>
-  window.onload = function() {
-    confetti({
-      particleCount: 150,
-      spread: 80,
-      origin: { y: 0.6 }
-    });
-  }
-</script>
 <body>
     <header class="hero">
         <section class="hero__mainTitle container">
@@ -45,14 +35,15 @@
         <section class="hero__container container">
             <h1 class="hero__subtitle">¡Felicidades!&#x1F632; Fuiste seleccionad@!</h1>
             <p class="hero__paragraph"> Fuiste seleccionado para ser invitado cordialmente a una cena especial por mi cumpleaños&#x1F389; </p>
-            <img src="images/arrow.svg" class="hero__arrow" id="toggle-icon">
+            <button id="open-invitation" class="hero__button hero__button--red">Abrir invitación</button>
+            <audio id="bg-music" src="music/Los Titanes De Durango - Hoy Es Mi Cumpleanos.mp3"></audio>
         </section>
     </header>
 
     <main>
         <div id="divToToggle">
             <section class="container about">
-                <h1 class="subtitle">¡Mis 22 vueltotas al sol!&#x1F525;</h1>
+                <h1 class="subtitle">¡22 vueltotas al sol!&#x1F525;</h1>
                 <p class="about__paragraph">Se acerca mi cumpleaños y qué mejor que celebrarlo acompañado de mi gente? Ustedes saben que rollo &#x1F4AA;</p>
             </section>
 

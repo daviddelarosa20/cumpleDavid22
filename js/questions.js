@@ -1,15 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const toggleIcon = document.getElementById('toggle-icon');
+    const openBtn = document.getElementById('open-invitation');
     const divToToggle = document.getElementById('divToToggle');
+    const bgMusic = document.getElementById('bg-music');
 
-    toggleIcon.addEventListener('click', function() {
-        // Alternar la visibilidad del div
-        if (divToToggle.style.display === 'none' || divToToggle.style.display === '') {
-            divToToggle.style.display = 'block';
-            toggleIcon.classList.add('rotate');
-        } else {
-            divToToggle.style.display = 'none';
-            toggleIcon.classList.remove('rotate');
-        }
+    openBtn.addEventListener('click', function() {
+        // Mostrar contenido
+        divToToggle.style.display = 'block';
+
+        // Lanzar confetti
+        confetti({
+            particleCount: 150,
+            spread: 80,
+            origin: { y: 0.6 }
+        });
+
+        // Reproducir música
+        bgMusic.play();
+
+        // Ocultar el botón después de abrir
+        openBtn.style.display = 'none';
     });
 });
